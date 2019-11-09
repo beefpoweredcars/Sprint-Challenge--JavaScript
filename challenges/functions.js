@@ -7,9 +7,8 @@
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 const consume = function(a, b, cb){
-  cb = function(a,b){
-  }
-  return cb();
+  cb(a,b)
+  return cb(a,b);
 }
 
 
@@ -18,15 +17,27 @@ const consume = function(a, b, cb){
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+const add = function(num1, num2){
+  return num1 + num2;
+}
+const multiply = function(num1, num2){
+  return num1 * num2;
+}
+const greeting = function(firstName, lastName){
+  return `Hello ${firstName} ${lastName}, nice to meet you!`
+}
+
+
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
+// SSSSSSSTTTTTTTRRRRRREEEEEEETTTTTTTTTCCCCCCCCCCHHHHHHHHHH        
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
