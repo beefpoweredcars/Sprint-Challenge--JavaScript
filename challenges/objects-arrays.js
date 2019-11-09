@@ -11,7 +11,10 @@ const tyrannosaurus = {
   diet: "carnivorous",
   weight: "7000kg",
   height: "12m",
-  period: "Late Cretaceous"
+  period: "Late Cretaceous",
+  roar: function(){
+    return `RAWERSRARARWERSARARARRRR!`
+  }
 }
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -46,7 +49,7 @@ console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyrannosaurus.roar());
 
 
 // ==== Arrays ====
@@ -70,6 +73,10 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
+for (let i =0; i < graduates.length; i++){
+  graduates.university[i].push(universities);
+}
+universities.sort();
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
