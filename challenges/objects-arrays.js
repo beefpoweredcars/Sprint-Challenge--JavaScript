@@ -1,10 +1,3 @@
-// ==== Objects ====
-
-/* 
-  Given the following information about dinosaurs, create 3 objects: 
-  Use this pattern to create your objects: 
-  object name, diet, weight, length, period
-*/
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 const tyrannosaurus = {
@@ -39,7 +32,7 @@ const velociraptor = {
 console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log(velociraptor.doet);
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
 console.log(stegosaurus.height);
@@ -73,8 +66,8 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
-for (let i =0; i < graduates.length; i++){
-  graduates.university[i].push(universities);
+for (var i = 0; i < graduates.length; i++){
+  universities.push(graduates[i].university);
 }
 universities.sort();
 console.log(universities);
@@ -86,6 +79,10 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 const contactInfo = [];
+for (var i = 0; i < graduates.length; i++){
+  contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`)
+}
+
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
